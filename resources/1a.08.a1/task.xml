@@ -1,0 +1,443 @@
+<?xml version="1.0"?>
+<task name="GO16.AC.01.1A.08.A1" id="GO16.AC.01.1A.08.A1">
+	<preload>
+		<comps>
+			<comp id="1" name="SIMS.Components.Access.Ribbon" cssclass="SIMS_Ribbon_Access" type="default"/>
+			<comp id="2" name="SIMS.Components.Common.TaskBar" cssclass="SIMS_TaskBar" type="default"/>
+			<comp id="3" name="SIMS.Components.Access.AccessStatusBar" cssclass="AccessStatusBar" type="default" title="Access Status Bar"/>
+			<comp id="4" name="SIMS.Components.Access.AccessNavigationPane" cssclass="AccessNavigationPane" type="modeless pane"/>
+			<comp id="5" name="SIMS.Components.Access.DataSheetView" cssclass="DataSheetView" type="default"/>
+			<comp id="6" name="SIMS.Components.Access.AccessDataPanel" cssclass="AccessDataPanel" type="default"/>
+			<comp id="7" name="SIMS.Components.Common.CustomMessageBox" cssclass="CustomMessageBox" type="modaldialog" title="Microsoft Access"/>
+			<comp id="8" name="SIMS.Components.Access.ImageObjectWindow" cssclass="ImageObjectWindow" type="default"/>
+			<comp id="9" name="SIMS.Components.Access.TableDesignView" cssclass="AccessDesignView" type="modeless pane"/>
+		</comps>
+		<resources>
+			<res path="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/tabelData.json" type="txt"/>
+			<res path="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/tabelData2.json" type="txt"/>
+		</resources>
+	</preload>
+	<texts_formatted>
+		<txt id="1" StateStart="1">
+			<![CDATA[Switch to Design view, and then delete the Middle Initial field from the table.]]>
+		</txt>
+	</texts_formatted>
+	<states>
+		<state id="1" desc="Open database file" txt="1">
+			<comps>
+				<comp id="1" mode="new">
+					<sizeandpos>
+						<attr name="left" value="0"/>
+						<attr name="top" value="0"/>
+						<attr name="width" value="*"/>
+						<attr name="height" value="150"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="APP" value="access"/>
+						<attr name="RIBBON_PATH" value="app/comps/Common/Ribbon/access-ribbon.xml"/>
+						<attr name="SEL_TAB" value="Home"/>
+						<attr name="ACTIVATE_TAB" value="Table Tools Fields"/>
+						<attr name="ACTIVATE_TAB" value="Table Tools Table"/>
+						<attr name="DOCUMENT_NAME" value="1A_Drivers: Database- E:\1A_Drivers.accdb (Access 2007 - 2013 file format) - Access"/>
+					</initialattrs>
+					<events>
+						<event id="2002" followup="2" desc="Design view clicked"/>
+						<event id="2004" followup="2" desc="Design view clicked"/>
+						<event id="2012" followup="2" desc="Home tab  : Views group"/>
+						<event id="2170" followup="2" desc="Table Tools Fields tab  : Views group "/>
+					</events>
+				</comp>
+				<comp id="4" mode="new">
+					<initialattrs>
+						<attr name="IS_COLLAPSED" value="true"/>
+						<attr name="SELECTED_DB_OBJECT" value="1A Drivers"/>
+						<attr name="SELECTED_DB_OBJECT_TYPE" value="Tables"/>
+						<attr name="PROJECT_JSON" value="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/tabelData.json"/>
+					</initialattrs>
+					<events>
+						<event id="4005" followup="20" desc="Design view clicked"/>
+						<event id="4004" followup="11" target-attribute-set="expandWidth" desc="Design view clicked"/>
+					</events>
+				</comp>
+				<comp id="8" mode="new">
+					<initialattrs>
+						<attr name="IMAGE_PATH" value="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/DatabaseView.jpg"/>
+						<attr name="OBJECT_TYPE" value="Table"/>
+						<attr name="OBJECT_NAME" value="1A Drivers"/>
+						<attr name="ACTIVE_VIEW" value="Datasheet"/>
+						<attr name="AUTO_FIT" value="false"/>
+						<attr name="VERTICAL_LEFT_PANE_WIDTH" value="38"/>
+						<attr name="SHOW_RECORD_NAVIGATOR" value="true"/>
+						<attr name="NAVIGATOR_TYPE" value="Page"/>
+						<attr name="NAVIGATOR_SEARCHBOX_SHOW" value="true"/>
+						<attr name="NAVIGATOR_CURRENT_RECORD" value="1"/>
+						<attr name="NAVIGATOR_TOTAL_RECORD" value="17"/>
+						<attr name="NAVIGATOR_FILTERED_STATE" value="1"/>
+						<attr name="NAVIGATOR_DISABLED_BUTTON" value="2"/>
+					</initialattrs>
+					<events>
+						<event id="2006" followup="2" desc="Design view clicked"/>
+					</events>
+				</comp>
+				<comp id="3" mode="new">
+					<sizeandpos>
+						<attr name="left" value="0"/>
+						<attr name="bottom" value="42"/>
+						<attr name="width" value="*"/>
+						<attr name="height" value="24"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="STATUSBAR_TEXT" value="Datasheet View"/>
+						<attr name="DISPLAY_LOCK_KEYS" value="{ &quot;CAPSLOCK&quot; : false, &quot;NUMLOCK&quot; : true,  &quot;SCROLLOCK&quot; : false }"/>
+						<attr name="DB_OBJECT_ACTIVE_View" value="{&quot;Object&quot;:1,&quot;View&quot;:4}"/>
+					</initialattrs>
+					<events>
+						<event id="1" followup="2" desc="Design view"/>
+					</events>
+				</comp>
+				<comp id="2" mode="new">
+					<sizeandpos>
+						<attr name="left" value="0"/>
+						<attr name="bottom" value="0"/>
+						<attr name="width" value="*"/>
+						<attr name="height" value="31"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="OPENWORDFILE" value="Access - 1A_Drivers: Database- E:\1A_Drivers.accdb (Access 2007 - 2013 file format)"/>
+						<attr name="APPLICATION" value="access"/>
+						<attr name="APP_TOOLTIP_IMAGE" value="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/previewImg.jpg"/>
+					</initialattrs>
+				</comp>
+			</comps>
+		</state>
+		<state id="11" desc="Open database file" txt="1">
+			<comps>
+				<comp id="1" mode="new">
+					<sizeandpos>
+						<attr name="left" value="0"/>
+						<attr name="top" value="0"/>
+						<attr name="width" value="*"/>
+						<attr name="height" value="150"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="APP" value="access"/>
+						<attr name="RIBBON_PATH" value="app/comps/Common/Ribbon/access-ribbon.xml"/>
+						<attr name="SEL_TAB" value="Home"/>
+						<attr name="ACTIVATE_TAB" value="Table Tools Fields"/>
+						<attr name="ACTIVATE_TAB" value="Table Tools Table"/>
+						<attr name="DOCUMENT_NAME" value="1A_Drivers: Database- E:\1A_Drivers.accdb (Access 2007 - 2013 file format) - Access"/>
+					</initialattrs>
+					<events>
+						<event id="2002" followup="20" target-attribute-set="expandWidth" desc="Design view clicked"/>
+						<event id="2004" followup="20" target-attribute-set="expandWidth" desc="Design view clicked"/>
+						<event id="2012" followup="20" target-attribute-set="expandWidth" desc="Home tab  : Views group"/>
+						<event id="2170" followup="20" target-attribute-set="expandWidth" desc="Table Tools Fields tab  : Views group "/>
+					</events>
+				</comp>
+				<comp id="4" mode="new">
+					<initialattrs>
+						<attr name="IS_COLLAPSED" value="false"/>
+						<attr name="SELECTED_DB_OBJECT" value="1A Drivers"/>
+						<attr name="SELECTED_DB_OBJECT_TYPE" value="Tables"/>
+						<attr name="PROJECT_JSON" value="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/tabelData.json"/>
+					</initialattrs>
+					<events>
+						<event id="4005" followup="20" desc="Design view clicked"/>
+						<event id="4004" followup="11" desc="Design view clicked"/>
+					</events>
+				</comp>
+				<comp id="8" mode="new">
+					<initialattrs>
+						<attr name="IMAGE_PATH" value="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/DatabaseView.jpg"/>
+						<attr name="OBJECT_TYPE" value="Table"/>
+						<attr name="OBJECT_NAME" value="1A Drivers"/>
+						<attr name="ACTIVE_VIEW" value="Datasheet"/>
+						<attr name="AUTO_FIT" value="false"/>
+						<attr name="VERTICAL_LEFT_PANE_WIDTH" value="38"/>
+						<attr name="SHOW_RECORD_NAVIGATOR" value="true"/>
+						<attr name="NAVIGATOR_TYPE" value="Page"/>
+						<attr name="NAVIGATOR_SEARCHBOX_SHOW" value="true"/>
+						<attr name="NAVIGATOR_CURRENT_RECORD" value="1"/>
+						<attr name="NAVIGATOR_TOTAL_RECORD" value="17"/>
+						<attr name="NAVIGATOR_FILTERED_STATE" value="1"/>
+						<attr name="NAVIGATOR_DISABLED_BUTTON" value="2"/>
+					</initialattrs>
+						<initialattributesets>
+						<attributeset name="expandWidth" inherits-default="true">
+							<attr name="VERTICAL_LEFT_PANE_WIDTH" value="260"/>
+						</attributeset>
+					</initialattributesets>
+					<events>
+						<event id="2006" followup="2" target-attribute-set="expandWidth" desc="Design view clicked"/>
+					</events>
+				</comp>
+				<comp id="3" mode="new">
+					<sizeandpos>
+						<attr name="left" value="0"/>
+						<attr name="bottom" value="42"/>
+						<attr name="width" value="*"/>
+						<attr name="height" value="24"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="STATUSBAR_TEXT" value="Datasheet View"/>
+						<attr name="DISPLAY_LOCK_KEYS" value="{ &quot;CAPSLOCK&quot; : false, &quot;NUMLOCK&quot; : true,  &quot;SCROLLOCK&quot; : false }"/>
+						<attr name="DB_OBJECT_ACTIVE_View" value="{&quot;Object&quot;:1,&quot;View&quot;:4}"/>
+					</initialattrs>
+					<events>
+						<event id="1" followup="2" target-attribute-set="expandWidth" desc="Design view"/>
+					</events>
+				</comp>
+				<comp id="2" mode="new">
+					<sizeandpos>
+						<attr name="left" value="0"/>
+						<attr name="bottom" value="0"/>
+						<attr name="width" value="*"/>
+						<attr name="height" value="31"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="OPENWORDFILE" value="Access - 1A_Drivers: Database- E:\1A_Drivers.accdb (Access 2007 - 2013 file format)"/>
+						<attr name="APPLICATION" value="access"/>
+						<attr name="APP_TOOLTIP_IMAGE" value="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/previewImg.jpg"/>
+					</initialattrs>
+				</comp>
+			</comps>
+		</state>
+		<state id="2" desc="Design view open" txt="1">
+			<comps>
+				<comp id="7" mode="remove"/>
+				<comp id="1" mode="edit">
+					<initialattrs>
+						<attr name="HIDE_TAB" value="Table Tools Fields"/>
+						<attr name="HIDE_TAB" value="Table Tools Table"/>
+						<attr name="SEL_TAB" value="Table Tools Design"/>
+						<attr name="HIGHLIGHT_PRIMARY" value="true"/>
+						<attr name="ACTIVATE_TAB" value="Table Tools Design"/>
+					</initialattrs>
+					<events>
+						<event id="2026" desc="cut pressed">
+							<validate followup="3">
+								<comp id="9"/>
+							</validate>
+						</event>
+						<event id="2025" desc="cut pressed">
+							<validate followup="3">
+								<comp id="9"/>
+							</validate>
+						</event>
+					</events>
+				</comp>
+				<comp id="9" mode="new">
+					<initialattrs>
+						<attr name="TABLE_NAME" value="1A Drivers"/>
+						<attr name="PROJECT_JSON" value="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/tabelData.json"/>
+						<attr name="ACTIVATED_FIELDS_DATA" value="[[4,1],[4,2],[4,3]]"/>
+						<attr name="TABLE_ROWS" value="13"/>
+						<attr name="VERTICAL_LEFT_PANE_WIDTH" value="38"/>
+						<attr name="RETAINSELECTION" value="selection"/>
+					</initialattrs>
+					<initialattributesets>
+						<attributeset name="expandWidth" inherits-default="true">
+							<attr name="VERTICAL_LEFT_PANE_WIDTH" value="260"/>
+						</attributeset>
+						<attributeset name="Row_Selected" inherits-default="true">
+							<attr name="SELECTED_TABLE_ROW" value="4"/>
+							<attr name="SELECTED_TABLE_COLUMN" value="1"/>
+						</attributeset>
+					</initialattributesets>
+					<finalattrs>
+						<attr name="SELECTED_TABLE_ROW" value="4"/>
+					</finalattrs>
+					<finalattributesets>
+						<attributeset name="check1" inherits-default="false">
+							<attr name="SELECTED_TABLE_ROW" value="4"/>
+							<attr name="SELECTED_TABLE_COLUMN" value="1"/>
+						</attributeset>
+						<attributeset name="check3" inherits-default="false">
+							<attr name="SELECTED_TABLE_ROW" value="4"/>
+							<attr name="SELECTED_TABLE_COLUMN" value="2"/>
+						</attributeset>
+						<attributeset name="check4" inherits-default="false">
+							<attr name="SELECTED_TABLE_ROW" value="4"/>
+							<attr name="SELECTED_TABLE_COLUMN" value="3"/>
+						</attributeset>
+						<attributeset name="check2" inherits-default="false">
+							<attr name="SELECTED_TABLE_ROW" value="4"/>
+							<attr name="SELECTED_TABLE_COLUMN" value="-1"/>
+						</attributeset>
+					</finalattributesets>
+					<events>
+						<event id="1006" followup="3" desc="Delete row clicked">
+							<validate>
+								<comp id="9"/>
+							</validate>
+						</event>
+						<event id="1002" desc="cut row clicked">
+							<validate followup="0" operator="any">
+								<comp id="9" validation-set="check1"/>
+								<comp id="9" validation-set="check3"/>
+								<comp id="9" validation-set="check4"/>
+							</validate>
+							<validate followup="3">
+								<comp id="9" validation-set="check2"/>
+							</validate>
+						</event>
+					</events>
+				</comp>
+				<comp id="3" mode="new">
+					<initialattrs>
+						<attr name="STATUSBAR_TEXT" value="Design view, F6 = Switch panes, F1=Help."/>
+						<attr name="DB_OBJECT_ACTIVE_View" value="{&quot;Object&quot;:1,&quot;View&quot;:1}"/>
+					</initialattrs>
+				</comp>
+			</comps>
+		</state>
+		<state id="20" desc="Design view open" txt="1">
+			<comps>
+				<comp id="7" mode="remove"/>
+				<comp id="1" mode="edit">
+					<initialattrs>
+						<attr name="HIDE_TAB" value="Table Tools Fields"/>
+						<attr name="HIDE_TAB" value="Table Tools Table"/>
+						<attr name="SEL_TAB" value="Table Tools Design"/>
+						<attr name="HIGHLIGHT_PRIMARY" value="true"/>
+						<attr name="ACTIVATE_TAB" value="Table Tools Design"/>
+					</initialattrs>
+					<initialattributesets>
+						<attributeset name="expandWidth" inherits-default="true">
+							<attr name="VERTICAL_LEFT_PANE_WIDTH" value="260"/>
+						</attributeset>
+					</initialattributesets>
+					<events>
+						<event id="2026" desc="cut pressed">
+							<validate followup="30">
+								<comp id="9"/>
+							</validate>
+						</event>
+						<event id="2025" desc="cut pressed">
+							<validate followup="30">
+								<comp id="9"/>
+							</validate>
+						</event>
+					</events>
+				</comp>
+				<comp id="9" mode="new">
+					<initialattrs>
+						<attr name="TABLE_NAME" value="1A Drivers"/>
+						<attr name="PROJECT_JSON" value="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/tabelData.json"/>
+						<attr name="ACTIVATED_FIELDS_DATA" value="[[4,1],[4,2],[4,3]]"/>
+						<attr name="TABLE_ROWS" value="13"/>
+						<attr name="RETAINSELECTION" value="selection"/>
+						<attr name="VERTICAL_LEFT_PANE_WIDTH" value="260"/>
+					</initialattrs>
+					<finalattrs>
+						<attr name="SELECTED_TABLE_ROW" value="4"/>
+					</finalattrs>
+					<finalattributesets>
+						<attributeset name="check1" inherits-default="false">
+							<attr name="SELECTED_TABLE_ROW" value="4"/>
+							<attr name="SELECTED_TABLE_COLUMN" value="1"/>
+						</attributeset>
+						<attributeset name="check2" inherits-default="false">
+							<attr name="SELECTED_TABLE_ROW" value="4"/>
+							<attr name="SELECTED_TABLE_COLUMN" value="-1"/>
+						</attributeset>
+					</finalattributesets>
+					<events>
+						<event id="1006" desc="Delete row clicked">
+							<validate followup="30">
+								<comp id="9"/>
+							</validate>
+						</event>
+						<event id="1002" desc="cut row clicked">
+							<validate followup="0">
+								<comp id="9" validation-set="check1"/>
+							</validate>
+							<validate followup="30">
+								<comp id="9" validation-set="check2"/>
+							</validate>
+						</event>
+					</events>
+				</comp>
+				<comp id="3" mode="new">
+					<initialattrs>
+						<attr name="STATUSBAR_TEXT" value="Design view, F6 = Switch panes, F1=Help."/>
+						<attr name="DB_OBJECT_ACTIVE_View" value="{&quot;Object&quot;:1,&quot;View&quot;:1}"/>
+					</initialattrs>
+				</comp>
+			</comps>
+		</state>
+		<state id="30" desc="confirmation dialog open" txt="1" optimized="true">
+			<comps>
+				<comp id="7" mode="new">
+					<sizeandpos>
+						<attr name="left" value="100"/>
+						<attr name="top" value="100"/>
+						<attr name="width" value="552"/>
+						<attr name="height" value="72"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="TYPE" value="OkCancel"/>
+						<attr name="MESSAGE_TEXT" value="&lt;b&gt; Do you want to permanentaly delete the selected field(s) and all the data in field(s)? &lt;/b&gt; &lt;br&gt;&lt;br&gt;To permanently delete the field(s), click Yes"/>
+						<attr name="FOCUS_BUTTON" value="YES"/>
+						<attr name="ARRAY_BUTTON_JSONS" value="[{ &quot;text&quot;: &quot;Yes&quot;, &quot;width&quot;: &quot;60&quot;, &quot;height&quot;: &quot;22&quot;, &quot;accessKey&quot;: &quot;Y&quot;, &quot;fireEventId&quot;: &quot;1&quot;,&quot;focusState&quot; : &quot;2&quot; },{ &quot;text&quot;: &quot;No&quot;, &quot;width&quot;: &quot;60&quot;, &quot;height&quot;: &quot;22&quot;, &quot;accessKey&quot;: &quot;N&quot;, &quot;fireEventId&quot;: &quot;9998&quot;}]"/>
+					</initialattrs>
+					<events>
+						<event id="1" followup="21" desc="yes"/>
+						<event id="9998" followup="20" desc="No"/>
+					</events>
+				</comp>
+			</comps>
+		</state>
+		<state id="21" desc="Design view open" txt="1">
+			<comps>
+				<comp id="7" mode="remove"/>
+				<comp id="1" mode="edit"/>
+				<comp id="9" mode="edit">
+					<initialattrs>
+						<attr name="TABLE_NAME" value="1A Drivers"/>
+						<attr name="PROJECT_JSON" value="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/tabelData2.json"/>
+					</initialattrs>
+				</comp>
+				<comp id="4" mode="edit">
+					<events>
+						<event id="4003" followup="4" desc="Design view clicked"/>
+					</events>
+				</comp>
+				<comp id="3" mode="edit"/>
+			</comps>
+		</state>
+		<state id="3" desc="confirmation dialog open" txt="1" optimized="true">
+			<comps>
+				<comp id="7" mode="new">
+					<sizeandpos>
+						<attr name="left" value="100"/>
+						<attr name="top" value="100"/>
+						<attr name="width" value="552"/>
+						<attr name="height" value="72"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="TYPE" value="OkCancel"/>
+						<attr name="MESSAGE_TEXT" value="&lt;b&gt; Do you want to permanentaly delete the selected field(s) and all the data in field(s)? &lt;/b&gt; &lt;br&gt;&lt;br&gt;To permanently delete the field(s), click Yes"/>
+						<attr name="FOCUS_BUTTON" value="YES"/>
+						<attr name="ARRAY_BUTTON_JSONS" value="[{ &quot;text&quot;: &quot;Yes&quot;, &quot;width&quot;: &quot;60&quot;, &quot;height&quot;: &quot;22&quot;, &quot;accessKey&quot;: &quot;Y&quot;, &quot;fireEventId&quot;: &quot;1&quot;,&quot;focusState&quot; : &quot;2&quot; },{ &quot;text&quot;: &quot;No&quot;, &quot;width&quot;: &quot;60&quot;, &quot;height&quot;: &quot;22&quot;, &quot;accessKey&quot;: &quot;N&quot;, &quot;fireEventId&quot;: &quot;9998&quot;}]"/>
+					</initialattrs>
+					<events>
+						<event id="1" followup="4" desc="yes"/>
+						<event id="9998" followup="2" desc="yes"/>
+					</events>
+				</comp>
+			</comps>
+		</state>
+		<state id="4" desc="Last state" islast="true">
+			<comps>
+				<comp id="7" mode="remove"/>
+				<comp id="9" mode="edit">
+					<initialattrs>
+						<attr name="TABLE_NAME" value="1A Drivers"/>
+						<attr name="PROJECT_JSON" value="XMLs/TaskXmls2016/go/ac/01/1a.08.a1/Assets/tabelData2.json"/>
+					</initialattrs>
+				</comp>
+			</comps>
+		</state>
+	</states>
+</task>

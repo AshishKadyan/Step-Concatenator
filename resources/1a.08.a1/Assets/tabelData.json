@@ -1,0 +1,773 @@
+{
+    "tables": [
+        {
+            "name": "1A Drivers",
+            "navData": null,
+            "dataPath": "C:\\Users\\neelu_singh\\Desktop\\xmlfolder\\go\\a1\\Table_1A Drivers_Data.json",
+            "fields": [
+                {
+                    "id": "Driver ID",
+                    "type": "ShortText",
+                    "displayName": "Driver ID",
+                    "desc": "",
+                    "isPrimaryKey": "true",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Indexed",
+                            "value": "Yes (No Duplicates)",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Unicode Compression",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Mode",
+                            "value": "No Control",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Sentence Mode",
+                            "value": "None",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Text Align",
+                            "value": "General",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Last Name",
+                    "type": "ShortText",
+                    "displayName": "Last Name",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Indexed",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Unicode Compression",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Mode",
+                            "value": "No Control",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Sentence Mode",
+                            "value": "None",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Text Align",
+                            "value": "General",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "First Name",
+                    "type": "ShortText",
+                    "displayName": "First Name",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Indexed",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Unicode Compression",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Mode",
+                            "value": "No Control",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Sentence Mode",
+                            "value": "None",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Text Align",
+                            "value": "General",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Middle Initial",
+                    "type": "ShortText",
+                    "displayName": "Middle Initial",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Indexed",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Unicode Compression",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Mode",
+                            "value": "No Control",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Sentence Mode",
+                            "value": "None",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Text Align",
+                            "value": "General",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Date of Birth",
+                    "type": "Date/Time",
+                    "displayName": "Date of Birth",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "8",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Indexed",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Mode",
+                            "value": "No Control",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Sentence Mode",
+                            "value": "None",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Text Align",
+                            "value": "General",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Show Date Picker",
+                            "value": "For Dates",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Address",
+                    "type": "ShortText",
+                    "displayName": "Address",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Indexed",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Unicode Compression",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Mode",
+                            "value": "No Control",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Sentence Mode",
+                            "value": "None",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Text Align",
+                            "value": "General",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "City",
+                    "type": "ShortText",
+                    "displayName": "City",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Indexed",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Unicode Compression",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Mode",
+                            "value": "No Control",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Sentence Mode",
+                            "value": "None",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Text Align",
+                            "value": "General",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "ZIP",
+                    "type": "ShortText",
+                    "displayName": "ZIP",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Indexed",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Unicode Compression",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Mode",
+                            "value": "No Control",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "IME Sentence Mode",
+                            "value": "None",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Text Align",
+                            "value": "General",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                }
+            ]
+        }
+    ],
+    "queries": [],
+    "reports": [],
+    "forms": [],
+    "relations": [],
+    "macros": [],
+    "modules": []
+}

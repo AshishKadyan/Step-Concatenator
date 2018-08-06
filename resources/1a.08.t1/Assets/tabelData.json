@@ -1,0 +1,797 @@
+{
+    "tables": [
+        {
+            "name": "1A Students",
+            "navData": null,
+            "dataPath": "C:\\Users\\neelu_singh\\Desktop\\xmlfolder\\New folder\\newfolde2\\Table_1A Students_Data.json",
+            "fields": [
+                {
+                    "id": "Student ID",
+                    "type": "ShortText",
+                    "displayName": "Student ID",
+                    "desc": "",
+                    "isPrimaryKey": "true",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+						{
+                            "name": "Indexed",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+						{
+                            "name": "Unicode Compression",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+						{
+                            "name": "IME Mode",
+                            "value": "No Control",
+                            "group": "General",
+                            "activate": "false"
+                        },
+						{
+                            "name": "IME Sentence Mode",
+                            "value": "None",
+                            "group": "General",
+                            "activate": "false"
+                        },
+						{
+                            "name": "Text Align",
+                            "value": "General",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Last Name",
+                    "type": "ShortText",
+                    "displayName": "Last Name",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "False",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "True",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "First Name",
+                    "type": "ShortText",
+                    "displayName": "First Name",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "False",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "True",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Middle Initial",
+                    "type": "ShortText",
+                    "displayName": "Middle Initial",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+						{
+                            "name": "Indexed",
+                            "value": "No",
+                            "group": "General",
+                            "activate": "false"
+                        },
+						{
+                            "name": "Unicode Compression",
+                            "value": "Yes",
+                            "group": "General",
+                            "activate": "false"
+                        },
+						{
+                            "name": "IME Mode",
+                            "value": "No Control",
+                            "group": "General",
+                            "activate": "false"
+                        },
+						{
+                            "name": "IME Sentence Mode",
+                            "value": "None",
+                            "group": "General",
+                            "activate": "false"
+                        },
+						{
+                            "name": "Text Align",
+                            "value": "General",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Address",
+                    "type": "ShortText",
+                    "displayName": "Address",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "False",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "True",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "City",
+                    "type": "ShortText",
+                    "displayName": "City",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "False",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "True",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "State",
+                    "type": "ShortText",
+                    "displayName": "State",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "False",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "True",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Postal Code",
+                    "type": "ShortText",
+                    "displayName": "Postal Code",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "False",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "True",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Phone",
+                    "type": "ShortText",
+                    "displayName": "Phone",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "False",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "True",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Email",
+                    "type": "ShortText",
+                    "displayName": "Email",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "False",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "True",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Faculty Advisor ID",
+                    "type": "ShortText",
+                    "displayName": "Faculty Advisor ID",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "255",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "False",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "True",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                },
+                {
+                    "id": "Amount Owed",
+                    "type": "Currency",
+                    "displayName": "Amount Owed",
+                    "desc": "",
+                    "isPrimaryKey": "false",
+                    "designData": [
+                        {
+                            "name": "Field Size",
+                            "value": "8",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Format",
+                            "value": "Currency",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Input Mask",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Caption",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Rule",
+                            "value": "",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Validation Text",
+                            "value": "",
+                            "group": "General",
+                            "activated": "false"
+                        },
+                        {
+                            "name": "Required",
+                            "value": "False",
+                            "group": "General",
+                            "activate": "false"
+                        },
+                        {
+                            "name": "Allow Zero Length",
+                            "value": "False",
+                            "group": "General",
+                            "activate": "false"
+                        }
+                    ],
+                    "gridFormatData": {
+                        "colWidth": "11.75"
+                    }
+                }
+            ]
+        }
+    ],
+    "queries": [],
+    "reports": [],
+    "forms": [],
+    "relations": [],
+    "macros": [],
+    "modules": []
+}

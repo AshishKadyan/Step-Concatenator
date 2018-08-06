@@ -1,0 +1,21 @@
+{
+    "include": [
+        "src"
+    ],
+    "compileOnSave": true,
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "target": "es5",
+        "sourceMap": false,
+        "types": [
+            "node"
+        ],
+        "lib": [
+            "es2015"
+        ],
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "declaration": true
+    }
+}

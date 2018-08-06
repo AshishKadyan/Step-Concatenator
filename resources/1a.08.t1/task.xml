@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<task name="GO13.AC13.01.1A.08.T1" id="">
+	<preload>
+		<comps>
+			<comp id="1" name="SIMS.Components.Access.Ribbon" cssclass="SIMS_Ribbon_Access" type="default"/>
+			<comp id="2" name="SIMS.Components.Common.TaskBar" cssclass="SIMS_TaskBar" type="default"/>
+			<comp id="3" name="SIMS.Components.Access.AccessStatusBar" cssclass="AccessStatusBar" type="default" title="Access Status Bar"/>
+			<comp id="4" name="SIMS.Components.Access.AccessNavigationPane" cssclass="AccessNavigationPane" type="modeless pane"/>
+			<comp id="5" name="SIMS.Components.Access.DataSheetView" cssclass="DataSheetView" type="default"/>
+			<comp id="6" name="SIMS.Components.Access.AccessDataPanel" cssclass="AccessDataPanel" type="default"/>
+			<comp id="7" name="SIMS.Components.Common.CustomMessageBox" cssclass="CustomMessageBox" type="modaldialog" title="Microsoft Access"/>
+			<comp id="8" name="SIMS.Components.Access.ImageObjectWindow" cssclass="ImageObjectWindow" type="default"/>
+			<comp id="9" name="SIMS.Components.Access.TableDesignView" cssclass="AccessDesignView" type="modeless pane"/>
+		</comps>
+		<resources>
+			<res path="XMLs/TaskXmls2016/go/ac/01/1a.08.t1/Assets/tabelData.json" type="json"/>
+			<res path="XMLs/TaskXmls/go/ac/01/t1projdata/1a06.json" type="json"/>
+			<res path="XMLs/TaskXmls/go/ac/01/1a.08.t1/Assets/tabelData2.json" type="txt"/>
+		</resources>
+	</preload>
+	<texts_formatted>
+		<txt id="1" StateStart="1">
+			<![CDATA[Switch to Design view, and then delete the Middle Initial field from the 1A Students table.]]>
+		</txt>
+	</texts_formatted>
+	<states>
+		<state id="1" desc="Open database file" txt="1">
+			<comps>
+				<comp id="1" mode="new">
+					<sizeandpos>
+						<attr name="left" value="0"/>
+						<attr name="top" value="0"/>
+						<attr name="width" value="*"/>
+						<attr name="height" value="150"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="APP" value="access"/>
+						<attr name="RIBBON_PATH" value="app/comps/Common/Ribbon/access-ribbon.xml"/>
+						<attr name="SEL_TAB" value="External Data"/>
+						<attr name="ACTIVATE_TAB" value="Table Tools Fields"/>
+						<attr name="ACTIVATE_TAB" value="Table Tools Table"/>
+						<attr name="DOCUMENT_NAME" value="1A_Advising: Database- E:\1A_Advising.accdb (Access 2007 - 2013 file format) - Access"/>
+					</initialattrs>
+					<events>
+						<event id="2002" desc="Design view clicked">
+							<validate followup="2">
+								<comp id="4" validation-set="collapsed"/>
+							</validate>
+							<validate followup="2" target-attribute-set="expandWidth">
+								<comp id="4" validation-set="expanded"/>
+							</validate>
+						</event>
+						<event id="2004" followup="2" desc="Design view clicked">
+							<validate followup="2">
+								<comp id="4" validation-set="collapsed"/>
+							</validate>
+							<validate followup="2" target-attribute-set="expandWidth">
+								<comp id="4" validation-set="expanded"/>
+							</validate>
+						</event>
+						<event id="2012" followup="2" desc="Ribbon: Home tab  : Views group">
+							<validate followup="2">
+								<comp id="4" validation-set="collapsed"/>
+							</validate>
+							<validate followup="2" target-attribute-set="expandWidth">
+								<comp id="4" validation-set="expanded"/>
+							</validate>
+						</event>
+						<event id="2170" followup="2" desc="Ribbon: Table Tools Fields tab  : Views group">
+							<validate followup="2">
+								<comp id="4" validation-set="collapsed"/>
+							</validate>
+							<validate followup="2" target-attribute-set="expandWidth">
+								<comp id="4" validation-set="expanded"/>
+							</validate>
+						</event>
+					</events>
+				</comp>
+				<comp id="4" mode="new">
+					<initialattrs>
+						<attr name="IS_COLLAPSED" value="true"/>
+						<attr name="COLLAPSING_EXPANDING_ALLOWED" value="true"/>
+						<attr name="PROJECT_JSON" value="XMLs/TaskXmls/go/ac/01/t1projdata/1a06.json"/>
+						<attr name="SELECTED_DB_OBJECT_TYPE" value="Tables"/>
+						<attr name="SELECTED_DB_OBJECT" value="1A Students"/>
+					</initialattrs>
+					<finalattributesets>
+						<attributeset name="expanded" inherits-default="false">
+							<attr name="IS_COLLAPSED" value="false"/>
+						</attributeset>
+						<attributeset name="collapsed" inherits-default="false">
+							<attr name="IS_COLLAPSED" value="true"/>
+						</attributeset>
+					</finalattributesets>
+					<events>
+						<event id="4005" followup="2" desc="Design view clicked" target-attribute-set="expandWidth"/>
+					</events>
+				</comp>
+				<comp id="8" mode="new">
+					<initialattrs>
+						<attr name="IMAGE_PATH" value="XMLs/TaskXmls2016/go/ac/01/1a.08.t1/Assets/DatabaseView.jpg"/>
+						<attr name="OBJECT_TYPE" value="Table"/>
+						<attr name="OBJECT_NAME" value="1A Students"/>
+						<attr name="ACTIVE_VIEW" value="Datasheet"/>
+						<attr name="AUTO_FIT" value="false"/>
+						<attr name="VERTICAL_LEFT_PANE_WIDTH" value="38"/>
+					</initialattrs>
+					<events>
+						<event id="2006" followup="2" desc="Design view clicked">
+							<validate followup="2">
+								<comp id="4" validation-set="collapsed"/>
+							</validate>
+							<validate followup="2" target-attribute-set="expandWidth">
+								<comp id="4" validation-set="expanded"/>
+							</validate>
+						</event>
+					</events>
+				</comp>
+				<comp id="3" mode="new">
+					<sizeandpos>
+						<attr name="left" value="0"/>
+						<attr name="bottom" value="42"/>
+						<attr name="width" value="*"/>
+						<attr name="height" value="24"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="STATUSBAR_TEXT" value="Datasheet View"/>
+						<attr name="DISPLAY_LOCK_KEYS" value="{ &quot;CAPSLOCK&quot; : false, &quot;NUMLOCK&quot; : true,  &quot;SCROLLOCK&quot; : false }"/>
+						<attr name="DB_OBJECT_ACTIVE_View" value="{&quot;Object&quot;:1,&quot;View&quot;:4}"/>
+					</initialattrs>
+					<events>
+						<event id="1" followup="2" desc="Design view">
+							<validate followup="2">
+								<comp id="4" validation-set="collapsed"/>
+							</validate>
+							<validate followup="2" target-attribute-set="expandWidth">
+								<comp id="4" validation-set="expanded"/>
+							</validate>
+						</event>
+					</events>
+				</comp>
+				<comp id="2" mode="new">
+					<sizeandpos>
+						<attr name="left" value="0"/>
+						<attr name="bottom" value="0"/>
+						<attr name="width" value="*"/>
+						<attr name="height" value="31"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="OPENWORDFILE" value="Access - 1A_Advising: Database- E:\1A_Advising.accdb (Access 2007 &#226;?? 2013 file format)"/>
+						<attr name="APPLICATION" value="access"/>
+						<attr name="APP_TOOLTIP_IMAGE" value="XMLs/TaskXmls2016/go/ac/01/1a.08.t1/Assets/previewImg.jpg"/>
+					</initialattrs>
+				</comp>
+			</comps>
+		</state>
+		<state id="2" desc="Design view open" txt="1">
+			<comps>
+				<comp id="7" mode="remove"/>
+				<comp id="1" mode="new">
+					<initialattrs>
+						<attr name="HIDE_TAB" value="Table Tools Fields"/>
+						<attr name="HIDE_TAB" value="Table Tools Table"/>
+						<attr name="SEL_TAB" value="Table Tools Design"/>
+						<attr name="HIGHLIGHT_PRIMARY" value="true"/>
+						<attr name="ACTIVATE_TAB" value="Table Tools Design"/>
+						<attr name="ACTIVATE_TAB" value="Table Tools Design"/>
+						<attr name="RIBBON_SUB_XML" value="XMLs/TaskXmls2016/go/ac/01/1a.08.t1/Assets/0000.xml"/>
+						<attr name="SUB_XML_UPDATE" value="true"/>
+					</initialattrs>
+					<initialattributesets>
+						<attributeset name="closed" inherits-default="false">
+							<attr name="HIGHLIGHT_PRIMARY" value="false"/>
+						</attributeset>
+					</initialattributesets>
+					<events>
+						<event id="2026" desc="cut pressed">
+							<validate followup="3">
+								<comp id="9"/>
+							</validate>
+						</event>
+						<event id="2025" desc="cut pressed">
+							<validate followup="3">
+								<comp id="9"/>
+							</validate>
+						</event>
+					</events>
+				</comp>
+				<comp id="9" mode="new">
+					<initialattrs>
+						<attr name="TABLE_NAME" value="1A Students"/>
+						<attr name="PROJECT_JSON" value="XMLs/TaskXmls2016/go/ac/01/1a.08.t1/Assets/tabelData.json"/>
+						<attr name="SELECTED_TABLE_ROW" value="1"/>
+						<attr name="SELECTED_TABLE_COLUMN" value="1"/>
+						<attr name="ACTIVATED_FIELDS_DATA" value="[[4,1],[4,2],[4,3]]"/>
+						<attr name="TABLE_ROWS" value="20"/>
+						<attr name="VERTICAL_LEFT_PANE_WIDTH" value="38"/>
+					</initialattrs>
+					<initialattributesets>
+						<attributeset name="expandWidth" inherits-default="true">
+							<attr name="VERTICAL_LEFT_PANE_WIDTH" value="260"/>
+						</attributeset>
+						<attributeset name="closed" inherits-default="false">
+							<attr name="SELECTED_TABLE_ROW" value="4"/>
+						</attributeset>
+					</initialattributesets>
+					<finalattrs>
+						<attr name="SELECTED_TABLE_ROW" value="4"/>
+					</finalattrs>
+					<events>
+						<event id="1006" desc="Delete row clicked">
+							<validate followup="3">
+								<comp id="9"/>
+							</validate>
+						</event>
+						<event id="1002" desc="Delete row clicked">
+							<validate followup="3">
+								<comp id="9"/>
+							</validate>
+						</event>
+					</events>
+				</comp>
+				<comp id="3" mode="new">
+					<initialattrs>
+						<attr name="STATUSBAR_TEXT" value="Design view, F6 = Switch panes, F1=Help."/>
+						<attr name="DB_OBJECT_ACTIVE_View" value="{&quot;Object&quot;:1,&quot;View&quot;:1}"/>
+					</initialattrs>
+				</comp>
+			</comps>
+		</state>
+		<state id="3" desc="confirmation dialog open" txt="1" optimized="true">
+			<comps>
+				<comp id="1" mode="edit">
+					<initialattrs>
+						<attr name="HIGHLIGHT_PRIMARY" value="false"/>
+					</initialattrs>
+				</comp>
+				<comp id="4" mode="new">
+					<finalattributesets>
+						<attributeset name="expanded" inherits-default="false">
+							<attr name="IS_COLLAPSED" value="false"/>
+						</attributeset>
+						<attributeset name="collapsed" inherits-default="false">
+							<attr name="IS_COLLAPSED" value="true"/>
+						</attributeset>
+					</finalattributesets>
+				</comp>
+				<comp id="7" mode="new">
+					<sizeandpos>
+						<attr name="left" value="100"/>
+						<attr name="top" value="100"/>
+						<attr name="width" value="552"/>
+						<attr name="height" value="72"/>
+					</sizeandpos>
+					<initialattrs>
+						<attr name="TYPE" value="OkCancel"/>
+						<attr name="MESSAGE_TEXT" value="&lt;b&gt; Do you want to permanentaly delete the selected field(s) and all the data in field(s)? &lt;/b&gt; &lt;br&gt;&lt;br&gt;To permanently delete the field(s), click Yes"/>
+						<attr name="FOCUS_BUTTON" value="YES"/>
+						<attr name="ARRAY_BUTTON_JSONS" value="[{ &quot;text&quot;: &quot;Yes&quot;, &quot;width&quot;: &quot;60&quot;, &quot;height&quot;: &quot;22&quot;, &quot;accessKey&quot;: &quot;Y&quot;, &quot;fireEventId&quot;: &quot;1&quot; ,&quot;focusState&quot; : &quot;2&quot; },{ &quot;text&quot;: &quot;No&quot;, &quot;width&quot;: &quot;60&quot;, &quot;height&quot;: &quot;22&quot;, &quot;accessKey&quot;: &quot;N&quot;, &quot;fireEventId&quot;: &quot;9998&quot;}]"/>
+					</initialattrs>
+					<events>
+						<event id="1" desc="yes">
+							<validate followup="4">
+								<comp id="4" validation-set="collapsed"/>
+							</validate>
+							<validate followup="44">
+								<comp id="4" validation-set="expanded"/>
+							</validate>
+						</event>
+						<event id="9998" followup="2" target-attribute-set="closed" desc="yes"/>
+					</events>
+				</comp>
+			</comps>
+		</state>
+		<state id="4" desc="Last state" islast="true">
+			<comps>
+				<comp id="7" mode="remove"/>
+				<comp id="9" mode="edit">
+					<initialattrs>
+						<attr name="TABLE_NAME" value="1A Students"/>
+						<attr name="PROJECT_JSON" value="XMLs/TaskXmls/go/ac/01/1a.08.t1/Assets/tabelData2.json"/>
+					</initialattrs>
+				</comp>
+			</comps>
+		</state>
+		<state id="44" txt="1">
+			<comps>
+				<comp id="7" mode="remove"/>
+				<comp id="9" mode="edit">
+					<initialattrs>
+						<attr name="TABLE_NAME" value="1A Students"/>
+						<attr name="PROJECT_JSON" value="XMLs/TaskXmls/go/ac/01/1a.08.t1/Assets/tabelData2.json"/>
+					</initialattrs>
+				</comp>
+				<comp id="4" mode="new">
+					<events>
+						<event id="4003" followup="4" desc="Shutter Bar clicked to expand navigation pane"/>
+					</events>
+				</comp>
+			</comps>
+		</state>
+	</states>
+</task>

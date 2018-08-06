@@ -1,0 +1,232 @@
+{
+    "practice": {
+        "@assignmentid": "GO16.AC.01.1A.08.T1",
+        "audiofolderpath": "XMLs/TaskXmls/go/ac/01/1a.08.t1",
+        "item": [
+            {
+                "@id": "1",
+                "actions": {
+                    "action": [
+                         {
+                            "@id": "1",
+                            "trackers": {
+                                "tracker": [
+                                    {
+                                        "@type": "MOUSE",
+                                        "event": {
+                                            "followupaction": "2"
+                                        },
+                                        "input": {
+                                            "targetarea": ".//*[@class='tab-header tab-header-home accessible']",
+                                            "type": "LEFT"
+                                        }
+                                    }
+                                ]
+                            },
+                            "highlightarea": {
+                                "element": ".//*[@class='tab-header tab-header-home accessible']",
+                                "geometry": {
+                                    "@type": "rect"
+                                }
+                            },
+                            "blurbdata": {
+                                "contextelement": "HighlightArea",
+                                "container": "#SIMArea",								
+                                "content": "Click the Home tab.",
+                                "ptrdir": "right_top",
+                                "audiodata": {
+                                    "audiofile": "audio/1.1"
+                                }
+                            }
+                        },
+						{
+                            "@id": "2",
+                            "trackers": {
+                                "tracker": [
+                                    {
+                                        "@type": "MOUSE",
+                                        "event": {
+                                            "followupaction": "3"
+                                        },
+                                        "input": {
+                                            "targetarea": ".//*[@id='ribbon-tab-Home']/li[1]/descendant::span[@class='dropdown-button office-hover-default']",
+                                            "type": "LEFT"
+                                        }
+                                    }
+                                ]
+                            },
+                            "highlightarea": {
+                                "element": ".//*[@id='ribbon-tab-Home']/li[1]/descendant::span[@class='dropdown-button office-hover-default']",
+                                "geometry": {
+                                    "@type": "rect"
+                                }
+                            },
+                            "blurbdata": {
+                                "contextelement": "HighlightArea",
+                                "container": "#SIMArea",								
+                                "content": "In the Views group, click the View arrow, and then click Design View.",
+								"starthighlightpos": "0",
+                                "endhighlightpos": "41",
+                                "ptrdir": "right_top",
+                                "audiodata": {
+                                    "audiofile": "audio/1.2"
+                                }
+                            }
+                        },
+						{
+                            "@id": "3",
+                            "parentid": "2",
+                            "@elementtowatch": ".//*[@id='ribbon-tab-Home']/li[1]/descendant::div[@class='combobox-dropdown dropdown-open']",
+                            "trackers": {
+                                "tracker": [
+                                    {
+                                        "@type": "TASKEVENT",
+                                        "input": {
+                                            "compevents": {
+                                                "compevent": [
+                                                    {
+                                                        "compid": "1",
+                                                        "eventid": "2002"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "event": {
+                                            "followupaction": "4"
+                                        }
+                                    }
+                                ]
+                            },
+                            "highlightarea": {
+                                "element": ".//*[@id='ribbon-tab-Home']/li[1]/descendant::div[@class='dropdown-item office-hover-default Sim5-ContextMenuItem accessible item-type-iconandtext'][2]",
+                                "geometry": {
+                                    "@type": "rect"
+                                }
+                            },
+                            "blurbdata": {
+                                "contextelement": "HighlightArea",
+                                "container": "#SIMArea",                                
+                                "starthighlightpos": "42",
+                                "endhighlightpos": "68",
+                                "ptrdir": "right"
+                            }
+                        },
+						
+						{
+                            "@id": "4",
+                            "trackers": {
+                                "tracker": [
+                                    {
+                                        "@type": "MOUSE",
+                                        "event": {
+                                            "followupaction": "5"
+                                        },
+                                        "input": {
+                                            "targetarea": ".//*[@id='TableDesignView_DesignTable']/table/tbody/tr[5]/td[1]",
+                                            "type": "LEFT"
+											
+                                        }
+                                    }
+                                ]
+                            },
+                            "highlightarea": {
+                                "element": ".//*[@id='TableDesignView_DesignTable']/table/tbody/tr[5]/td[1]",
+                                "geometry": {
+                                    "@type": "rect",
+                                    "margin": "1 0 0 0",
+                                    "adjustwidthby": "-4",
+                                    "top":"77px"
+                                }
+                            },
+                            "blurbdata": {
+                                "contextelement": "HighlightArea",
+                                "container": "#SIMArea",								
+                                "content": "In the Field Name column, to the left of Middle Initial, click the row selector box.",
+                                "ptrdir": "bottom",
+                                "audiodata": {
+                                    "audiofile": "audio/1.4"
+                                }
+                            }
+                        },
+						{
+                            "@id": "5",
+                            "trackers": {
+                                "tracker": [
+                                    {
+                                        "@type": "TASKEVENT",
+                                        "input": {
+                                            "compevents": {
+                                                "compevent": [
+                                                    {
+                                                        "compid": "1",
+                                                        "eventid": "2025"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "event": {
+                                            "followupaction": "6"
+                                        }
+                                    }
+                                ]
+                            },
+                            "highlightarea": {
+                                "element": ".//*[@id='ribbon-tab-Table Tools Design']/li[2]/descendant::span[@class='office-hover-default button-binder'][4]",
+                                "geometry": {
+                                    "@type": "rect"
+                                }
+                            },
+                            "blurbdata": {
+                                "contextelement": "HighlightArea",
+                                "container": "#SIMArea",
+                                "content": "On the Table Tools Design tab, in the Tools group, click Delete Rows.",
+                                "ptrdir": "right_top",
+								"audiodata": {
+                                    "audiofile": "audio/1.5"
+                                }
+                            }
+                        },
+						{
+                            "@id": "6",
+							"@islast": "true",
+                            "trackers": {
+                                "tracker": [
+                                    {
+                                        "@type": "TASKEVENT",
+                                        "input": {
+                                            "compevents": {
+                                                "compevent": [
+                                                    {
+                                                        "compid": "7",
+                                                        "eventid": "1"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "highlightarea": {
+                                "element": ".//*[@id='7']/div[2]/button[1]",
+                                "geometry": {
+                                    "@type": "rect"
+                                }
+                            },
+                            "blurbdata": {
+                                "contextelement": "HighlightArea",
+                                "container": "#7",
+                                "content": "In the message box, click Yes.",
+                                "ptrdir": "left_top",
+								"audiodata": {
+                                    "audiofile": "audio/1.6"
+                                }
+                            }
+                        }
+						 
+					]
+                }
+            }
+			
+        ]
+    }
+}
