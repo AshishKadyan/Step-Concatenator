@@ -18,7 +18,6 @@ function isOfSameSize(path1, path2): boolean {
 }
 
 function isEqualHtml(path1: string, path2: string): boolean {
-    console.log("comparing files " + path1 + " & " + path2 + " on HTML-differ");
     var html1 = fs.readFileSync(path1, 'utf-8');
     var html2 = fs.readFileSync(path2, 'utf-8');
     var options = {
@@ -33,7 +32,6 @@ function isEqualHtml(path1: string, path2: string): boolean {
     var diff = htmlDiffer.diffHtml(html1, html2),
         isEqual = htmlDiffer.isEqual(html1, html2),
         res = logger.getDiffText(diff, { charsAroundDiff: 40 });
-    // logger.logDiffText(diff, { charsAroundDiff: 40 });
     return isEqual;
 }
 
@@ -56,21 +54,16 @@ function isEqualJson(path1, path2): boolean {
     var json1 = fs.readFileSync(path1, 'utf-8');
     var json2 = fs.readFileSync(path2, 'utf-8');
     var res = equal(JSON.parse(json1), JSON.parse(json2));
-
     return res;
 }
 function XML2js(path) {
     return new Promise(function (resolve, reject) {
-
         fs.readFile(path, function (err, data) {
             if (err) {
                 console.error(err);
             }
-
             parser.parseString(data, function (err, result) {
-
                 resolve(result);
-
             })
         })
     })
