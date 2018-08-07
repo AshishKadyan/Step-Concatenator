@@ -57,7 +57,6 @@ var processDuplicates = /** @class */ (function () {
             var files = filehound.create()
                 .paths(path)
                 .find();
-            //  console.log(files)
             resolve(files);
         });
     };
@@ -133,9 +132,7 @@ var processDuplicates = /** @class */ (function () {
                         return [4 /*yield*/, this.comparePathsArray(array1)];
                     case 2:
                         _a.sent();
-                        return [4 /*yield*/, this.prepareResult()
-                            // this.moveResource("duplicate")
-                        ];
+                        return [4 /*yield*/, this.prepareResult()];
                     case 3:
                         _a.sent();
                         return [2 /*return*/];

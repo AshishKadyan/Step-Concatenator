@@ -19,9 +19,9 @@ function isOfSameSize(path1, path2): boolean {
 
 function isEqualHtml(path1: string, path2: string): boolean {
     console.log("comparing files " + path1 + " & " + path2 + " on HTML-differ");
-    const html1 = fs.readFileSync(path1, 'utf-8');
-    const html2 = fs.readFileSync(path2, 'utf-8');
-    const options = {
+    var html1 = fs.readFileSync(path1, 'utf-8');
+    var html2 = fs.readFileSync(path2, 'utf-8');
+    var options = {
         ignoreAttributes: [],
         compareAttributesAsJSON: [],
         ignoreWhitespaces: true,
@@ -29,8 +29,8 @@ function isEqualHtml(path1: string, path2: string): boolean {
         ignoreEndTags: false,
         ignoreDuplicateAttributes: false
     };
-    const htmlDiffer = new HtmlDiffer(options);
-    const diff = htmlDiffer.diffHtml(html1, html2),
+    var htmlDiffer = new HtmlDiffer(options);
+    var diff = htmlDiffer.diffHtml(html1, html2),
         isEqual = htmlDiffer.isEqual(html1, html2),
         res = logger.getDiffText(diff, { charsAroundDiff: 40 });
     // logger.logDiffText(diff, { charsAroundDiff: 40 });
@@ -44,18 +44,18 @@ function isEqualBinary(path1: string, path2: string): boolean {
         return false;
     }
     var data1 = fs.readFileSync(path1);
-    const encoded1 = new Buffer(data1, 'binary').toString('base64');
+    var encoded1 = new Buffer(data1, 'binary').toString('base64');
     var data2 = fs.readFileSync(path2);
-    const encoded2 = new Buffer(data2, 'binary').toString('base64');
+    var encoded2 = new Buffer(data2, 'binary').toString('base64');
 
     return encoded1 === encoded2;
 }
 
 function isEqualJson(path1, path2): boolean {
     // console.log("comparing files " + path1 + " & " + path2 + " on assert deep-equal")
-    const json1 = fs.readFileSync(path1, 'utf-8');
-    const json2 = fs.readFileSync(path2, 'utf-8');
-    const res = equal(JSON.parse(json1), JSON.parse(json2));
+    var json1 = fs.readFileSync(path1, 'utf-8');
+    var json2 = fs.readFileSync(path2, 'utf-8');
+    var res = equal(JSON.parse(json1), JSON.parse(json2));
 
     return res;
 }

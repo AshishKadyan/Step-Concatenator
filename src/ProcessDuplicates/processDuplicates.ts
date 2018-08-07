@@ -20,10 +20,9 @@ export default class processDuplicates {
     checkMap = {};
     pathFinder(path: string): Promise<string[]> {
         return new Promise((resolve, reject) => {
-            const files = filehound.create()
+            var files = filehound.create()
                 .paths(path)
                 .find();
-            //  console.log(files)
             resolve(files)
         });
     }
@@ -43,10 +42,10 @@ export default class processDuplicates {
         var counter = 0
         return new Promise(async (resolve, reject) => {
             for (let outer_index = 0; outer_index < array1.length; outer_index++) {
-                const element = array1[outer_index];
+                var element = array1[outer_index];
 
                 for (let inner_index = outer_index + 1; inner_index < array1.length; inner_index++) {
-                    const element2 = array1[inner_index];
+                    var element2 = array1[inner_index];
                     if (!this.checkMap[element2])
                         await this.compare2Paths(element, element2)
 
@@ -69,9 +68,6 @@ export default class processDuplicates {
         await this.comparePathsArray(array1)
 
         await this.prepareResult()
-
-        // this.moveResource("duplicate")
-
     }
     prepareResult() {
         return new Promise((resolve, reject) => {
@@ -99,10 +95,10 @@ export default class processDuplicates {
                 return (path.extname(path1) == path.extname(path2))
             }
             var size_check = function (path1, path2) {
-                const stats = fs.statSync(path1)
-                const fileSizeInBytes = stats.size
-                const stats1 = fs.statSync(path2)
-                const fileSizeInBytes1 = stats1.size
+                var stats = fs.statSync(path1)
+                var fileSizeInBytes = stats.size
+                var stats1 = fs.statSync(path2)
+                var fileSizeInBytes1 = stats1.size
                 return (fileSizeInBytes == fileSizeInBytes1)
             }
 
