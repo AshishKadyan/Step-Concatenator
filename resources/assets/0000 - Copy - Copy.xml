@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<ribbon>
+	<tabs>
+		<tab name="HOME" ak="H">
+			<sections>
+				<section name="Views" launcher="false" ak="" eventId="">
+					<control type="SplitButtonNewVertical" text="View" ak="W" eventId="2012" identifier="home_view">
+						<tooltips>
+							<tooltip target="icon" type="BodyOnly">
+								<body>
+									<![CDATA[View]]>
+								</body>
+							</tooltip>
+							<tooltip target="arrow" type="BodyOnly">
+								<body>
+									<![CDATA[View]]>
+								</body>
+							</tooltip>
+						</tooltips>
+						<icon wd="38px" ht="38px" src="app/Comps2016/Common/Ribbon/sub-ribbons/access/sprites/QueryDesignView2.png">
+							<imgcrop top="-284px" left="-34px"/>
+						</icon>
+						<items wd="170px">
+							<item type="IconAndText" ak="H" text="Datasheet View" eventId="2003">
+								<icon wd="38px" ht="38px" src="app/Comps2016/Common/Ribbon/sub-ribbons/access/sprites/QueryDesignView2.png">
+									<imgcrop top="-283px" left="-31px"/>
+								</icon>
+							</item>
+							<item type="IconAndText" ak="D" tooltip="" text="Design View" eventId="2002">
+								<icon wd="38px" ht="38px" src="app/Comps2016/Common/Ribbon/sub-ribbons/access/sprites/QueryDesignView2.png">
+									<imgcrop top="-239px" left="-33px"/>
+								</icon>
+							</item>
+						</items>
+					</control>
+				</section>
+			</sections>
+		</tab>
+	</tabs>
+</ribbon>

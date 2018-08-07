@@ -9,7 +9,8 @@ private input: any
 public async initiateStepConcatenation(){
 
 let processDuplicatesObject= new ProcessDuplicates;
-processDuplicatesObject.driver();
+await processDuplicatesObject.driver();
+console.log(processDuplicatesObject.duplicatesArray)
 
     }
 }

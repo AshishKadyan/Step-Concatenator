@@ -9,7 +9,7 @@ const HtmlDiffer = require('html-differ').HtmlDiffer;
 const logger = require('html-differ/lib/logger');
 const equal = require("deep-equal");
 var assert = require('assert');
-var PNG = require('pngjs').PNG,
+var PNG = require('pngjs').PNG;
 var pixelmatch = require('pixelmatch');
 const { imgDiff } = require('img-diff-js');
 
@@ -39,6 +39,7 @@ function isEqualHtml(path1: string, path2: string): boolean {
 
 function isEqualBinary(path1: string, path2: string): boolean {
     console.log("comparing files " + path1 + " & " + path2 + " on binary")
+
     if (!isOfSameSize(path1, path2)) {
         return false;
     }
@@ -51,12 +52,11 @@ function isEqualBinary(path1: string, path2: string): boolean {
 }
 
 function isEqualJson(path1, path2): boolean {
-    console.log("hrerere")
-    console.log("comparing files " + path1 + " & " + path2 + " on assert deep-equal")
+    // console.log("comparing files " + path1 + " & " + path2 + " on assert deep-equal")
     const json1 = fs.readFileSync(path1, 'utf-8');
     const json2 = fs.readFileSync(path2, 'utf-8');
     const res = equal(JSON.parse(json1), JSON.parse(json2));
-    console.log(res);
+
     return res;
 }
 function XML2js(path) {
@@ -75,16 +75,17 @@ function XML2js(path) {
         })
     })
 }
-function isEqualXML(path1, path2): Promise<boolean{
+function isEqualXML(path1, path2): Promise<boolean> {
     return new Promise((resolve, reject) => {
         let self = this
         let result: boolean
         let j1 = XML2js(path1)
         let j2 = XML2js(path2)
         Promise.all([j1, j2]).then(values => {
-            console.log(values)
+
             result = equal(values[0], values[1])
             resolve(result)
+
         })
 
     })
@@ -98,7 +99,7 @@ function isEqualPNG(path1, path2) {
     function doneReading() {
         if (++filesRead < 2) return;
         var numDiffPixels = pixelmatch(img1, img2);
-        console.log(numDiffPixels)
+
         if (numDiffPixels == 0)
             res = true;
     }
@@ -116,28 +117,33 @@ function isEqualjpg(path1, path2) {
     })
 
 }
-export function compareExtensionType(path1: string, path2: string, ext: string): boolean {
+export function compareExtensionType(path1: string, path2: string, ext: string) {
+
     switch (ext) {
         case ".htm":
             return isEqualHtml(path1, path2);
-
+            break;
         case ".html":
             return isEqualHtml(path1, path2);
-        // case ".png":
-        //     return isEqualPNG(path1, path2);
-
+            break;
         case ".json":
             return isEqualJson(path1, path2)
         case ".xml":
-            isEqualXML(path1, path2).then(res => {
-                return res
+            return new Promise(async (resolve, reject) => {
+                var res = await isEqualXML(path1, path2)
+                resolve(res)
+
             })
-        case ".jpg":
-            isEqualjpg(path1, path2).then(result => {
-                console.log(result)
-                return result
+            break;
+        case ".jpg" : case ".png":
+
+            return new Promise((resolve, reject) => {
+                isEqualjpg(path1, path2).then(result => {
+
+                    resolve(result)
+                })
             })
-            break
+            break;
         default:
             return isEqualBinary(path1, path2);
     }

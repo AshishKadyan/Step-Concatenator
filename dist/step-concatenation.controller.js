@@ -44,9 +44,15 @@ var StepConcatenationController = /** @class */ (function () {
         return __awaiter(this, void 0, void 0, function () {
             var processDuplicatesObject;
             return __generator(this, function (_a) {
-                processDuplicatesObject = new processDuplicates_1.default;
-                processDuplicatesObject.driver();
-                return [2 /*return*/];
+                switch (_a.label) {
+                    case 0:
+                        processDuplicatesObject = new processDuplicates_1.default;
+                        return [4 /*yield*/, processDuplicatesObject.driver()];
+                    case 1:
+                        _a.sent();
+                        console.log(processDuplicatesObject.duplicatesArray);
+                        return [2 /*return*/];
+                }
             });
         });
     };
