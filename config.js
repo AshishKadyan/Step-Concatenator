@@ -7,6 +7,6 @@ module.exports = {
    
     path1: "D:/Comparer/resources/1a.08.a1",
     path2: "D:/Comparer/resources/1a.08.t1",
-    dest: "E:/Step-XML-Concatenator/resources/assets"
+    dest: "E:/Step-XML-Concatenator/input/assets"
   }
 };
